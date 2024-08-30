@@ -9,7 +9,7 @@
 
         <header>
             <div class="Logo">
-             <img src="assets\analytics.png" alt="Analysis logo"> 
+             <img src="src\client\views\assets\data-science.png" alt="Analysis logo"> 
             </div>
             <div class="">
                 navigation
@@ -19,15 +19,18 @@
         <main>
             <section>
                 <form id="urlForm">
-                    <input id="name" type="text" name="url" placeholder="Enter URL" required>
+                    <input id="url" type="text" name="url" placeholder="Please Enter URL here" required>
                     <button id="submitButton" type="submit">Submit</button>
                 </form>
                 
             </section>
-
             <section>
                 <strong>Form Results:</strong>
-                <div id="results"></div>
+                <div id="results">
+                    <div id="polarity"></div>
+                    <div id="subjectivity"></div>
+                    <div id="text-content"></div>
+                </div>
             </section>
         </main>
 

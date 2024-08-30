@@ -30,7 +30,36 @@ app.get('/', function (req, res) {
     })
 
 // POST Route
+app.post('/api/analyze', async (req, res) => {
+    const { url } = req.body;
 
+    try {
+        // Make a POST request to MeaningCloud API
+        const response = await axios.post('https://api.meaningcloud.com/sentiment-2.1', null, {
+            params: {
+                key: API_KEY,
+                url: url,
+                lang: 'auto',
+                of: 'json'
+            },
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            }
+
+        });
+
+        const data = response.data;
+        console.log("this the data res fronm the server "+data);
+        res.json({
+            polarity: data.score_tag,
+            subjectivity: data.subjectivity,
+            text: data.sentence_list[0].text || '',
+        });
+    } catch (error) {
+        console.error('Error processing the request:', error);
+        res.status(500).json({ error: 'Error processing the request' });
+    }
+});
 
 
 // Designates what port the app will listen to for incoming requests
