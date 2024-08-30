@@ -68,7 +68,7 @@
 
 import { checkForName } from './nameChecker';
 
-const serverURL = 'https://localhost:8000/api'; 
+const serverURL = 'http://localhost:8000/api/analyze';
 
 const form = document.getElementById('urlForm');
 form.addEventListener('submit', handleSubmit);

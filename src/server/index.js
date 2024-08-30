@@ -22,10 +22,6 @@ const API_KEY = process.env.API_KEY
 console.log(API_KEY)
 
 app.get('/', function (req, res) {
-    res.send('index.html');
-});
-
-app.get('/', function (req, res) {
     res.sendFile('dist/index.html')
     })
 
