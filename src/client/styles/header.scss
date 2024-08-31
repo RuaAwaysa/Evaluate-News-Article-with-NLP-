@@ -1,5 +1,30 @@
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 10px 40px;
+    background-color: #282c34;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    // z-index: 1000;
+
+    .logo {
+        width: 100px;
+        height:100px
+    }
+
+    .nav {
+        a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: bold;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
 }
