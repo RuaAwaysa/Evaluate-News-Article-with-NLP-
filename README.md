@@ -66,10 +66,11 @@ src/
 ### **Setup**
 
 1. **Clone the Repository**
-   \`\`\`bash
-   git clone https://github.com/RuaAwaysa/Evaluate-News-Article-with-NLP.git
+   ```bash
+    git clone https://github.com/RuaAwaysa/Evaluate-News-Article-with-NLP.git
    cd evaluate-news-article-with-nlp
-   \`\`\`
+   cd evaluate-news-article-with-nlp
+   ```
 
 2. **Install Dependencies**
    \`\`\`bash
