@@ -16,7 +16,7 @@ This project is a web tool that allows users to evaluate the sentiment and subje
 
 ## **Project Structure**
 
-\`\`\`bash
+```bash
 src/
 │
 ├── client/
@@ -46,7 +46,7 @@ src/
 ├── webpack.prod.js                   # Webpack configuration for production
 ├── package.json                      # Project dependencies and scripts
 └── README.md                         # Project README file (this file)
-\`\`\`
+```
 
 ## **Features**
 
@@ -73,32 +73,32 @@ src/
    ```
 
 2. **Install Dependencies**
-   \`\`\`bash
+   ```bash
    npm install
-   \`\`\`
+   ```
 
 3. **Set Up Environment Variables**
-   - Create a \`.env\` file in the root directory and add your MeaningCloud API key:
-     \`\`\`
+   - Create a `.env` file in the root directory and add your MeaningCloud API key:
+     ```
      API_KEY=your_meaningcloud_api_key
-     \`\`\`
+     ```
 
 4. **Build the Project**
    - For development:
-     \`\`\`bash
+     ```bash
      npm run build-dev
-     \`\`\`
+     ```
    - For production:
-     \`\`\`bash
+     ```bash
      npm run build-prod
-     \`\`\`
+     ```
 
 ## **Usage**
 
 1. **Start the Server**
-   \`\`\`bash
+   ```bash
    npm start
-   \`\`\`
+   ```
    The application will be available at \`http://localhost:8000\`.
 
 2. **Evaluate an Article**
@@ -128,11 +128,11 @@ src/
 
 ## **Testing**
 
-- The project includes unit tests written with Jest. The test files are located in \`src/client/js/__test__/\`.
+- The project includes unit tests written with Jest. The test files are located in `src/client/js/__test__/`.
 - To run the tests, use the following command:
-  \`\`\`bash
+  ```bash
   npm run test
-  \`\`\`
+  ```
 
 ## **License**
 
