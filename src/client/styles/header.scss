@@ -1,0 +1,44 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: #282c34;
+    color: white;
+    // position: fixed;
+    width: 100%;
+    top: 0;
+
+    h1 {
+        font-size: 3rem; /* Increase the font size for a bolder look */
+        font-weight: 900; /* Make the font weight bolder */
+        background: linear-gradient(45deg, #00C6FF, #007BFF);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+        text-shadow: 0 0 10px #007BFF, 0 0 20px #007BFF, 0 0 40px #007BFF, 0 0 80px #007BFF; /* Increase shadow strength */
+        animation: glow 1.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+        from {
+            text-shadow: 0 0 20px #007BFF, 0 0 40px #007BFF, 0 0 80px #007BFF, 0 0 100px #007BFF;
+        }
+        to {
+            text-shadow: 0 0 40px #00C6FF, 0 0 60px #00C6FF, 0 0 80px #00C6FF, 0 0 120px #00C6FF;
+        }
+    }
+
+    .nav {
+        a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: bold;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
