@@ -1,7 +1,4 @@
-// module.exports = {
-//     testEnvironment: 'jsdom',
-//   };
 module.exports = {
-    setupFiles: ['./jest.setup.js'], // Path to your setup file
-  };
-  
+  testEnvironment: 'jsdom',
+  setupFiles: ['./jest.setup.js'], // Include this if you have a setup file
+};

@@ -1,7 +1,13 @@
-// Mock fetch globally for all tests
-global.fetch = jest.fn(() =>
-  Promise.resolve({
-    ok: true,
-    json: () => Promise.resolve({}),
-  })
-);
+global.document = {
+  getElementById: jest.fn().mockImplementation((id) => {
+    if (id === 'urlForm') {
+      return {
+        addEventListener: jest.fn(),
+      };
+    }
+    return null;
+  }),
+  body: {
+    innerHTML: '',
+  },
+};
